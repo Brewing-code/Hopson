@@ -112,13 +112,13 @@ footer li a {
 }
 
 .header-hero nav {
-    width: 80vw; /* Ocupa el ancho completo de la ventana de visualización */
-    margin: 0; /* Elimina el margen predeterminado */
-    padding: 0; /* Elimina el padding predeterminado */
+    width: 80vw; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .header-hero  {
-    padding: 0; /* Elimina el padding predeterminado si es necesario */
+    padding: 0; 
 }
 
 
@@ -139,34 +139,20 @@ footer li a {
     font-family: HolidayFree;
     font-weight: 100;
     color: #333333;
-    text-align: center; /* Centra el texto */
+    text-align: center; 
     padding-top: 30px;
 }
 
-@media (max-width:768px){
-    .nombredelamarca {
-        margin: 0 auto;
-        margin-top: 10px;
-    }
-    .nombredelamarca > h1 {
-        font-size: 4rem;
-    }
-    article p{
-        margin: 0 auto;
-        text-align: justify;
-        font-weight: 400;
-        padding: 10px;
-    }
-    .container-fluid {
-        border: none !important;
-    }
-}   
+/* Estilo de la barra de navegacion */
 
-@media (min-width:769px){
-.nombredelamarca > h1{
-        font-size: 5rem;
-    }
+.container-fluid {
+    margin: 10px auto;
+    padding: 0 ;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.85);
 }
+
+/* Animacion y estilo de links */
 
 .navbar-nav a{
     font-weight: 300;
@@ -183,13 +169,6 @@ footer li a {
     background: rgba(0, 0, 0, 0.85) ;
     padding: 0;
     
-}
-
-.container-fluid {
-    margin: 10px auto;
-    padding: 0 ;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.85);
 }
 
 li > .madProyect:hover {
@@ -231,4 +210,29 @@ li > .madProyect:hover {
         transform: scale(1.2);
 }
 
+/*Media queries para responsive en dispositivos pequenos */
 
+@media (max-width:768px){
+    .nombredelamarca {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .nombredelamarca > h1 {
+        font-size: 4rem;
+    }
+    article p{
+        margin: 0 auto;
+        text-align: justify;
+        font-weight: 400;
+        padding: 10px;
+    }
+    .container-fluid {
+        border: none !important;
+    }
+}   
+
+@media (min-width:769px){
+.nombredelamarca > h1{
+        font-size: 5rem;
+    }
+}
