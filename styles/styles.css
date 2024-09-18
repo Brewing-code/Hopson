@@ -30,6 +30,15 @@ body {
     margin: 20px auto; 
     }
 
+.imagen {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+    border-radius: 5px;
+    box-sizing:border-box
+}
+    
+
 h2{
     text-align: center !important;
     margin-top:10vh !important;  
@@ -178,7 +187,7 @@ li > .madProyect:hover {
     animation: neonEffect 1.5s infinite alternate;
 }
 
-.madProyect, .tapRoom, .ales, .lagers, .deGuarda, .navbar-brand {
+.madProyect, .tapRoom, .ales, .lagers, .deGuarda, .nombredelamarca {
     transition: all 0.3s ease;
 }
 
@@ -203,39 +212,13 @@ li > .madProyect:hover {
     }
 }
 
-li >.tapRoom:active, .ales:active, .lagers:active, .deGuarda:active, .madProyect:active, .navbar-brand:active {
-    transform: scale(1.2);
-    
-    color { @keyframes neonEffect {
-        0% {
-          text-shadow: 0px 0px 10px rgba(0, 255, 150),
-                       0px 0px 20px rgba(0, 255, 150),
-                       0px 0px 30px rgba(0, 255, 150),
-                       0px 0px 40px rgba(0, 255, 150);
-        }
-        50% {
-          text-shadow: 0px 0px 10px rgba(255, 150, 0),
-                       0px 0px 20px rgba(255, 150, 0),
-                       0px 0px 30px rgba(255, 150, 0),
-                       0px 0px 40px rgba(255, 150, 0);
-        }
-        100% {
-          text-shadow: 0px 0px 10px rgba(255, 0, 150),
-                       0px 0px 20px rgba(255, 0, 150),
-                       0px 0px 30px rgba(255, 0, 150),
-                       0px 0px 40px rgba(255, 0, 150);
-        }
-    }
-    }
-}
-
-.imagen {
-    width: inherit;
-    height: 600px    ;
-    object-fit:cover;
-    border: 10px solid transparent;
-    border-radius: 15px;
-    box-sizing:border-box
+.ales:active, 
+.lagers:active, 
+.deGuarda:active, 
+.madProyect:active, 
+.nombredelamarca:active, 
+.tapRoom:active { 
+        transform: scale(1.2);
 }
 
 
