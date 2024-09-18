@@ -27,7 +27,7 @@ body {
     object-fit: cover; 
     max-height: 70vh; 
     display: block; 
-    margin: 0 auto; 
+    margin: 20px auto; 
     }
 
 h2{
@@ -239,10 +239,3 @@ li >.tapRoom:active, .ales:active, .lagers:active, .deGuarda:active, .madProyect
 }
 
 
-/* Puedes ajustar el margen en pantallas pequeñas si es necesario */
-@media (max-width: 991px) {
-    .navbar {
-        margin-top: 0 !important; /* Elimina el margen en pantallas pequeñas */
-        
-    }
-}
