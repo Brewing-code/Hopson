@@ -19,6 +19,7 @@ body {
     background-color:rgba(227, 227, 227, 0.434);
 }
 
+/* Comienza main */
 
 .foto-principal {
     border-radius: 5px;
@@ -40,7 +41,10 @@ article p{
     font-weight: 400;
     padding: 10px;
 }
+/* Fin Main */
 
+
+/* Comienza footer */
 
 footer img {
     mix-blend-mode: multiply;
@@ -85,8 +89,6 @@ footer li a {
     color: #222 !important; 
 }
 
-
-
 /* Hasta aca footer*/
 
 
@@ -121,26 +123,31 @@ footer li a {
     justify-content: space-around !important;
     align-items: center !important;
 }
-    
-.borde {
-    
-}
-
 
 .nombredelamarca {
     margin: 5vh auto;
     text-decoration: none;
+    font-family: HolidayFree;
+    font-weight: 100;
+    color: #333333;
+    text-align: center; /* Centra el texto */
+    padding-top: 30px;
 }
 
+@media (max-width:768px){
+    .nombredelamarca {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .nombredelamarca > h1 {
+        font-size: 4rem;
+    }
+}   
 
+@media (min-width:769px){
 .nombredelamarca > h1{
-    font-family: HolidayFree;
-    color: #333333;
-    font-size: 5rem;
-    font-weight: 100;
-    text-align: center; /* Centra el texto */
-    margin: 0 auto;
-    padding-top: 30px;
+        font-size: 5rem;
+    }
 }
 
 .navbar-nav a{
@@ -231,18 +238,7 @@ li >.tapRoom:active, .ales:active, .lagers:active, .deGuarda:active, .madProyect
     box-sizing:border-box
 }
 
-@media (min-width: 992px) { /* Ajusta el punto de interrupción según sea necesario */
-    .header-hero {
-        flex-direction: column !important;
-    }
 
-    .navbar {
-        margin-top: 1rem !important; /* Añade un espacio entre el h1 y el nav */
-    }
-    .header-hero h1 {
-        margin-bottom: 1rem
-    }
-}
 /* Puedes ajustar el margen en pantallas pequeñas si es necesario */
 @media (max-width: 991px) {
     .navbar {
