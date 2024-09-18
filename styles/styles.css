@@ -35,10 +35,12 @@ h2{
 }
 
 article p{
-    margin: 0;
+    margin: 0 15%;
     text-align: justify;
     font-weight: 400;
+    padding: 10px;
 }
+
 
 footer img {
     mix-blend-mode: multiply;
@@ -83,10 +85,10 @@ footer li a {
     color: #222 !important; 
 }
 
-article p {
-    margin: 0 15%;
-    padding: 10px;
-}
+
+
+/* Hasta aca footer*/
+
 
 .navbar {
     padding: 0;
@@ -104,19 +106,14 @@ article p {
     padding: 0; /* Elimina el padding predeterminado */
 }
 
-.header-hero .container-fluid {
+.header-hero  {
     padding: 0; /* Elimina el padding predeterminado si es necesario */
 }
 
-@media (min-width: 992px) {
-    .header-hero h1 {
-        margin-bottom: 1rem; /* Ajusta el margen inferior si es necesario */
-    }
-}
+
 
 .navbar-nav {
-    border: solid 1px black !important;
-    border-radius: 10px !important;
+   
     width:100%;
     padding: 0 !important; 
     margin:0 !important;
@@ -126,8 +123,7 @@ article p {
 }
     
 .borde {
-    border: solid 1px bLack !important;
-    border-radius: 10px !important;
+    
 }
 
 
@@ -166,9 +162,8 @@ article p {
 
 .container-fluid {
     margin: 10px auto;
-    padding: 0 0;
-    border: 1px solid black !important;
-    border-radius: 10px !important;
+    padding: 0 ;
+    
 }
 
 li > .madProyect:hover {
@@ -238,18 +233,20 @@ li >.tapRoom:active, .ales:active, .lagers:active, .deGuarda:active, .madProyect
 
 @media (min-width: 992px) { /* Ajusta el punto de interrupción según sea necesario */
     .header-hero {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .navbar {
-        margin-top: 1rem; /* Añade un espacio entre el h1 y el nav */
+        margin-top: 1rem !important; /* Añade un espacio entre el h1 y el nav */
+    }
+    .header-hero h1 {
+        margin-bottom: 1rem
     }
 }
-
 /* Puedes ajustar el margen en pantallas pequeñas si es necesario */
 @media (max-width: 991px) {
     .navbar {
-        margin-top: 0; /* Elimina el margen en pantallas pequeñas */
+        margin-top: 0 !important; /* Elimina el margen en pantallas pequeñas */
         
     }
 }
