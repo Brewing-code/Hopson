@@ -56,25 +56,12 @@ article p{
 /* Comienza footer */
 
 footer img {
-    mix-blend-mode: multiply;
-    -webkit-mix-blend-mode: multiply;
     padding: 5px;
     width: 60px; 
     height: auto; 
     object-fit:contain; /* Recorta la imagen si es necesario para llenar el contenedor */
     display: block; 
     margin: 10px 10px 10px 10px;
-}
-
-footer img {
-    background-color: transparent; /* Color de fondo predeterminado */
-    mix-blend-mode: multiply;
-}
-
-@media screen and (max-width: 768px) {
-    footer img {
-        background-color: rgba(255, 255, 255, 0.5); /* Fallback para móviles */
-    }
 }
 
 .footer  a{
