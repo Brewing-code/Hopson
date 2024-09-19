@@ -245,6 +245,12 @@ li > .madProyect:hover {
         height: 19px !important;
         top:40px !important;
     }
+    footer ul {
+        padding: 0;
+    }
+    footer {
+        padding: 0;
+    }
     }
  
 
