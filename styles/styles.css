@@ -240,7 +240,12 @@ li > .madProyect:hover {
         right: 20px !important;
         justify-content: center;
     }
-}
+     .mail {
+        width: 19px !important;
+        height: 19px !important;
+        top:40px !important;
+    }
+    }
  
 
 @media (min-width:769px){
@@ -250,39 +255,40 @@ li > .madProyect:hover {
 }
 
 .whatsapp-button {
-    position: fixed; 
-    top: 20px; 
-    right: 18px; 
-    background-color: #222523; 
-    color: white; 
-    border-radius: 50px; 
-    font-size: 18px;
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
-    text-decoration: none; 
-    z-index: 1000; 
-    transition: transform 0.3s ease; 
+    position: fixed; /* Fija el botón en un lugar de la pantalla */
+    top: 20px; /* A 20px del borde inferior de la ventana */
+    right: 18px; /* A 20px del borde derecho de la ventana */
+    background-color: #232825; /* Color de fondo de WhatsApp */
+    color: white; /* Color del texto y el ícono */    
+    border-radius: 50px; /* Hace el botón redondeado */
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    display: flex; /* Para alinear el ícono con el texto */
+    align-items: center; /* Centra verticalmente el ícono con el texto */
+    gap: 10px; /* Añade espacio entre el ícono y el texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+    transition: transform 0.3s ease; /* Animación suave al hacer hover */
 }
 
 .email-button {
-    position: fixed; 
-    top: 75px; 
-    right: 20px; 
-    background-color: #222523;
-    color: white;
-    border-radius: 50px; 
-    font-size: 18px;
-    display: flex; 
-    align-items: center;
-    gap: 10px; 
-    padding: 10px; 
-    text-decoration: none;
-    z-index: 1000; 
-    transition: transform 0.3s ease; 
+    position: fixed; /* Fija el botón en un lugar de la pantalla */
+    top: 75px; /* A 70px del borde superior para quedar debajo del botón de WhatsApp */
+    right: 20px; /* A 20px del borde derecho de la ventana */
+    background-color: #232825; /* Color de fondo típico para el icono de correo */
+    color: white; /* Color del texto y el ícono */
+    border-radius: 50px; /* Hace el botón redondeado */
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    display: flex; /* Para alinear el ícono con el texto */
+    align-items: center; /* Centra verticalmente el ícono con el texto */
+    gap: 10px; /* Añade espacio entre el ícono y el texto */
+    padding: 10px; /* Añade espacio interno */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+    transition: transform 0.3s ease; /* Animación suave al hacer hover */
 }
 
 .email-button:hover, .whatsapp-button:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se hace hover */
 }
+
 
