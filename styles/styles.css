@@ -235,7 +235,7 @@ li > .madProyect:hover {
     }
 }
 
-.whatsappButton {
+.bi-whatsapp {
     position: fixed; /* Fija el botón en un lugar de la pantalla */
     bottom: 20px; /* A 20px del borde inferior de la ventana */
     right: 20px; /* A 20px del borde derecho de la ventana */
@@ -253,6 +253,7 @@ li > .madProyect:hover {
     transition: transform 0.3s ease; /* Animación suave al hacer hover */
 }
 
-.whatsappButton:hover {
+/* .bi-whatsapp:hover {
     transform: scale(1.1); /* Agranda un poco el botón al pasar el cursor */
-}
+
+
