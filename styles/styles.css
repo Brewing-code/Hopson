@@ -121,8 +121,6 @@ footer li a {
     padding: 0; 
 }
 
-
-
 .navbar-nav {
    
     width:100%;
@@ -235,4 +233,26 @@ li > .madProyect:hover {
 .nombredelamarca > h1{
         font-size: 5rem;
     }
+}
+
+.whatsappButton {
+    position: fixed; /* Fija el botón en un lugar de la pantalla */
+    bottom: 20px; /* A 20px del borde inferior de la ventana */
+    right: 20px; /* A 20px del borde derecho de la ventana */
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    color: white; /* Color del texto y el ícono */
+    
+    border-radius: 50px; /* Hace el botón redondeado */
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    display: flex; /* Para alinear el ícono con el texto */
+    align-items: center; /* Centra verticalmente el ícono con el texto */
+    gap: 10px; /* Añade espacio entre el ícono y el texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Añade sombra */
+    transition: transform 0.3s ease; /* Animación suave al hacer hover */
+}
+
+.whatsappButton:hover {
+    transform: scale(1.1); /* Agranda un poco el botón al pasar el cursor */
 }
