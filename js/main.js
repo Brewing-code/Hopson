@@ -77,5 +77,5 @@ calculadorDeMundiales();
 
 
 if (!CSS.supports('mix-blend-mode', 'multiply')) {
-    document.querySelector('footer img').style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
+    document.querySelector('.logofooter').style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
 }
