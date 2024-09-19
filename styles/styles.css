@@ -250,8 +250,11 @@ li > .madProyect:hover {
     footer {
         padding: 0;
     }
+    .navbar-nav li{
+        border-bottom: 2px solid rgba(227, 227, 227, 0.434);
+        width:50%; 
     }
- 
+} 
 
 @media (min-width:769px){
 .nombredelamarca > h1{
