@@ -1,0 +1,32 @@
+@mixin neonEffect($color1, $color2, $color3) {
+    animation: neonEffect 1.5s infinite alternate; // Añadir animación
+    text-shadow: 
+        0px 0px 10px $color1,
+        0px 0px 20px $color1,
+        0px 0px 30px $color1,
+        0px 0px 40px $color1;
+}
+
+@keyframes neonEffect {
+    0% {
+        text-shadow: 
+            0px 0px 10px rgba(0, 255, 150),
+            0px 0px 20px rgba(0, 255, 150),
+            0px 0px 30px rgba(0, 255, 150),
+            0px 0px 40px rgba(0, 255, 150);
+    }
+    50% {
+        text-shadow: 
+            0px 0px 10px rgba(255, 150, 0),
+            0px 0px 20px rgba(255, 150, 0),
+            0px 0px 30px rgba(255, 150, 0),
+            0px 0px 40px rgba(255, 150, 0);
+    }
+    100% {
+        text-shadow: 
+            0px 0px 10px rgba(255, 0, 150),
+            0px 0px 20px rgba(255, 0, 150),
+            0px 0px 30px rgba(255, 0, 150),
+            0px 0px 40px rgba(255, 0, 150);
+    }
+}

@@ -1,0 +1,65 @@
+@import 'variables';
+@import 'mixins';
+@import 'placeholders';
+
+html {
+    overflow-y: scroll !important;
+
+    body::-webkit-scrollbar {
+        display: none; 
+    }
+}
+
+body {
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-family: $font-family;
+    font-weight: 600;
+    background-color: $color-background;
+
+    .foto-principal {
+        @extend %image-style;
+    }
+
+    .imagen {
+        @extend %image-style;
+    }
+
+    h2 {
+        text-align: center !important;
+        margin-top: 10vh !important;  
+    }
+
+    article p {
+        margin: 0 15%;
+        text-align: justify;
+        font-weight: 400;
+        padding: 10px;
+    }
+}
+
+.nombredelamarca {
+    text-align: center; // Centra el texto
+    margin: 5vh auto;
+
+    h1 {
+        font-family: 'HolidayFree'; // Asegúrate de que esta fuente se aplique
+        font-size: 5rem;
+        margin-top: 50px;
+    }
+}
+
+.madProyect {
+    transition: transform 0.3s ease; // Transición para el hover
+
+    &:hover {
+        animation: neonEffect 1.5s infinite alternate; // Efecto neon
+        color: white; // Asegúrate de que el color se aplica
+    }
+
+    &:active {
+        transform: scale(1.2); // Agrandarse al hacer clic
+    }
+}

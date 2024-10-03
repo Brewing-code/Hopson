@@ -1,0 +1,18 @@
+// _variables.scss
+@font-face {
+    font-family: 'HolidayFree'; /* Nombre de la fuente */
+    src: url('../css/fonts/HolidayFree.otf') format('opentype'); /* Ruta correcta al archivo */
+}
+
+// Aquí puedes definir otras variables de color, tamaños, etc.
+// Variables de color
+$color1: rgba(0, 255, 150);
+$color2: rgba(255, 150, 0);
+$color3: rgba(255, 0, 150);
+$color-footer-border: rgba(18, 24, 21, 0.391);
+$color-background: rgba(227, 227, 227, 0.434);
+$color-text: #333333;
+
+// Tipografía
+$font-family: 'Asap', 'Nunito', serif;
+$font-family-holiday: 'HolidayFree';

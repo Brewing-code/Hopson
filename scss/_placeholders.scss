@@ -1,0 +1,20 @@
+// Placeholder para el footer
+%footer-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid $color-footer-border;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+// Placeholder para las imágenes
+%image-style {
+    border-radius: 5px;
+    width: 100%;
+    object-fit: cover;
+    max-height: 70vh;
+    display: block;
+    margin: 20px auto;
+}

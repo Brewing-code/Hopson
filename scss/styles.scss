@@ -1,0 +1,129 @@
+@import 'variables';
+@import 'mixins';
+@import 'navbar';
+@import 'main';
+@import 'footer';
+
+
+
+/* Media queries para responsive en dispositivos pequeños */
+@media (max-width: 768px) {
+    .nombredelamarca {
+        margin: 0 auto;
+        margin-top: 10px;
+
+        > h1 {
+            font-size: 4rem;
+        }
+    }
+
+    article p {
+        margin: 0 auto;
+        text-align: justify;
+        font-weight: 400;
+        padding: 10px;
+    }
+
+    .container-fluid {
+        border: none !important;
+    }
+
+    .bi-whatsapp, 
+    .bi {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .email-button {
+        width: 28px !important;
+        height: 28px !important;
+        top: 60px !important;
+        right: 20px !important;
+        justify-content: center;
+    }
+
+    .mail {
+        width: 19px !important;
+        height: 19px !important;
+        top: 40px !important;
+    }
+
+    footer {
+        padding: 0;
+
+        ul {
+            padding: 0;
+        }
+
+        .navbar-nav li {
+            border-bottom: 2px solid rgba(227, 227, 227, 0.434);
+            width: 50%; 
+        }
+    }
+} 
+
+@media (min-width: 769px) {
+    .nombredelamarca > h1 {
+        font-size: 5rem;
+    }
+}
+
+.whatsapp-button {
+    position: fixed;
+    top: 20px; 
+    right: 18px; 
+    background-color: #232825;
+    color: white; 
+    border-radius: 50px; 
+    font-size: 18px; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    text-decoration: none; 
+    z-index: 1000; 
+    transition: transform 0.3s ease; 
+}
+
+.email-button {
+    position: fixed; 
+    top: 75px; 
+    right: 20px; 
+    background-color: #232825; 
+    color: white; 
+    border-radius: 50px; 
+    font-size: 18px;
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+    padding: 10px; 
+    text-decoration: none; 
+    z-index: 1000; 
+    transition: transform 0.3s ease; 
+}
+
+.email-button:hover {
+    transform: scale(1.1);
+    background-color: #ff0303d1; 
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    background-color: #52bd7d;
+}
+
+.nombredelamarca:active, 
+.madProyect:active, 
+.tapRoom:active, 
+.ales:active, 
+.lagers:active, 
+.deGuarda:active { 
+    transform: scale(1.2); // Aumenta el tamaño al hacer clic
+    transition: transform 0.3s ease; // Asegúrate de que la transición esté aplicada
+}
+
+.madProyect:hover {
+    .madProyect {
+    @include neonEffect(rgba(0, 255, 150), rgba(255, 150, 0), rgba(255, 0, 150)); // Aplica el mixin
+}   
+}
+
