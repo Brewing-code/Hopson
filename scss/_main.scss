@@ -33,11 +33,21 @@ body {
     }
 
     article p {
-        margin: 0 15%;
+        margin: 0; // Para pantallas pequeñas, asegúrate de que sea consistente
         text-align: justify;
         font-weight: 400;
         padding: 10px;
     }
+
+    @media (min-width: 769px) {
+        article p {
+            margin: 0 10%; // Aquí defines el margen para pantallas grandes
+            text-align: justify;
+            font-weight: 400;
+            padding: 10px;
+        }
+    }
+    
 }
 
 .nombredelamarca {

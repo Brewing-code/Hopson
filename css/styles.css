@@ -137,10 +137,18 @@ body h2 {
   margin-top: 10vh !important;
 }
 body article p {
-  margin: 0 15%;
+  margin: 0;
   text-align: justify;
   font-weight: 400;
   padding: 10px;
+}
+@media (min-width: 769px) {
+  body article p {
+    margin: 0 10%;
+    text-align: justify;
+    font-weight: 400;
+    padding: 10px;
+  }
 }
 
 .nombredelamarca {
@@ -215,17 +223,11 @@ footer li a {
 /* Media queries para responsive en dispositivos pequeños */
 @media (max-width: 768px) {
   .nombredelamarca {
-    margin: 0 auto;
+    margin: 0;
     margin-top: 10px;
   }
   .nombredelamarca > h1 {
     font-size: 4rem;
-  }
-  article p {
-    margin: 0 auto;
-    text-align: justify;
-    font-weight: 400;
-    padding: 10px;
   }
   .container-fluid {
     border: none !important;
@@ -257,10 +259,26 @@ footer li a {
     border-bottom: 2px solid rgba(227, 227, 227, 0.434);
     width: 50%;
   }
+  article p {
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 0.1em;
+    hyphens: auto;
+    line-height: 1.5;
+    margin: 0 auto;
+    font-weight: 400;
+    padding: 10px;
+  }
 }
 @media (min-width: 769px) {
   .nombredelamarca > h1 {
     font-size: 5rem;
+  }
+  article p {
+    margin: 0 10%;
+    text-align: justify;
+    font-weight: 400;
+    padding: 10px;
   }
 }
 .whatsapp-button {
